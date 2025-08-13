@@ -1,0 +1,30 @@
+.SunAndMoon {
+    display: flex;
+    width: 3vw;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+
+    outline: none;
+    transition: 0.5s ease;
+    margin-bottom: 5vh;
+}
+
+.SunAndMoon:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+button {
+    width: 25%;
+    height: 50%;
+    margin: 20px 0 0 0;
+    border: none;
+    outline: 0px;
+    transition: 0.5s ease;
+}
+
+button:hover {
+    background-color: rgb(106, 136, 136);
+}
