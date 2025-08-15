@@ -15,16 +15,27 @@
 .SunAndMoon:hover {
     background-color: rgb(255, 0, 0);
 }
-
-button {
-    width: 25%;
-    height: 50%;
-    margin: 20px 0 0 0;
-    border: none;
-    outline: 0px;
-    transition: 0.5s ease;
+.meu-botao {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative; /* necessário para posicionar a linha */
 }
 
-button:hover {
-    background-color: rgb(106, 136, 136);
+.meu-botao::after {
+  content: "";
+  position: absolute;
+  left: 50%; /* começa no centro */
+  bottom: 0; /* fica embaixo do botão */
+  width: 0; /* começa sem largura */
+  height: 2px;
+  background-color: #756ED9;
+  transition: all 0.3s ease;
+}
+
+.meu-botao:hover::after {
+  left: 0;   /* vai para a esquerda */
+  width: 100%; /* cresce até cobrir toda a largura */
 }
