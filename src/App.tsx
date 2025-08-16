@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Header } from "./components/Header/Header";
+import { Body } from "./components/Body/Body";
 
 export default function App() {
   const [isDark, setIsDark] = useState(true)
@@ -10,6 +11,7 @@ export default function App() {
 
   return (
     <div style={{
+      display: "flex",
       background: 
       isDark
       ? "#050021" : "#CCCCCC",
@@ -32,8 +34,11 @@ export default function App() {
         }}>
         
           <Header isDark={isDark} toggleTheme={toggleTheme} />
+          < Body />
         
       </div>
+      
+      
     </div>
       
   );
